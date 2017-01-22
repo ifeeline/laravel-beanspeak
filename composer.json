@@ -1,0 +1,26 @@
+{
+    "name": "ifeeline/laravel-beanspeak",
+    "description": "Replace laravel beanstalk queue driver to beanspeak",
+    "keywords": ["laravel","ifeeline", "beanstalk", "beanspeak", "queue"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jinsheng.sha",
+            "email": "ifeeline@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ifeeline\\Beanspeak\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
