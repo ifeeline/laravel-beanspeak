@@ -99,7 +99,7 @@ class BeanstalkdQueue extends Queue implements QueueContract
     {
         $queue = $this->getQueue($queue);
 
-        $job = $this->beanspeak->watchOnly($queue)->reserve(0);
+        $job = $this->beanspeak->watchOnly($queue)->reserve();
 
         if ($job instanceof \Beanspeak\Job) {
             return new BeanstalkdJob($this->container, $this->beanspeak, $job, $queue);
